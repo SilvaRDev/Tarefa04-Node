@@ -1,0 +1,31 @@
+{
+  "name": "tarefa04-node",
+  "version": "1.0.0",
+  "description": "Exercício focado em express e handlebars, apresentado no curso de NodeJS do Matheus Battisti (Hora de codar)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilvaRDev/Tarefa04-Node.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Javascript",
+    "express",
+    "handlebars"
+  ],
+  "author": "Rafael Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SilvaRDev/Tarefa04-Node/issues"
+  },
+  "homepage": "https://github.com/SilvaRDev/Tarefa04-Node#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "nodemon": "^3.1.10"
+  }
+}
