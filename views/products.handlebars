@@ -1,1 +1,11 @@
 <h1>Nossos Produtos</h1>
+<section id="products">
+  {{#each products}}
+    <div class="card-product">
+      <div class="product-image"></div>
+      <h1 class="product-title">{{this.name}}</h1>
+      <p class="product-description">{{this.description}}</p>
+      <h2 class="product-value">R${{this.value}}</h2>
+    </div>
+  {{/each}}
+</section>
