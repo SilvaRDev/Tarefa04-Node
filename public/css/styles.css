@@ -11,6 +11,12 @@
   --link-w-hover: #ffffffa4;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: white;
+}
+
 /* HEADER */
 header {
   background-color: var(--hd-color);
@@ -60,8 +66,26 @@ header {
 
 /* MAIN */
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--bg-color);
+main {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: var(--hd-color);
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p {
+  font-size: 1.4em;
+}
+
+footer > p > a {
   color: white;
+  text-decoration: none;
 }
