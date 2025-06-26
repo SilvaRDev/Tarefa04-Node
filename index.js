@@ -18,11 +18,11 @@ const products = [
   {id: 1, name: 'Porta', description: 'Porta feita com madeira de carvalho', value: 1999},
   {id: 2, name: 'Abajur', description: 'Abajur novo, fabricado na China', value: 89},
   {id: 3, name: 'Teclado', description: 'Teclado logitech novo, ainda na caixa', value: 199},
-  {id: 3, name: 'Fone', description: 'Fone logitech novo, ainda na caixa', value: 359},
-  {id: 3, name: 'Gabinete', description: 'gabinete logitech novo, ainda na caixa', value: 499},
-  {id: 3, name: 'Mesa', description: 'Mesa feita com madeira de pinheiro', value: 1299},
-  {id: 3, name: 'Cadeira', description: 'Cadeira gamer usada, porém bem conservada...', value: 799},
-  {id: 3, name: 'Monitor', description: 'Monitor novo samsung', value: 2199}
+  {id: 4, name: 'Fone', description: 'Fone logitech novo, ainda na caixa', value: 359},
+  {id: 5, name: 'Gabinete', description: 'gabinete logitech novo, ainda na caixa', value: 499},
+  {id: 6, name: 'Mesa', description: 'Mesa feita com madeira de pinheiro', value: 1299},
+  {id: 7, name: 'Cadeira', description: 'Cadeira gamer usada, porém bem conservada...', value: 799},
+  {id: 8, name: 'Monitor', description: 'Monitor novo samsung', value: 2199}
 ]
 
 app.get('/produtos', (req, res) => {
