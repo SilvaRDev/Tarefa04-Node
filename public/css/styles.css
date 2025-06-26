@@ -10,6 +10,8 @@
   --bg-color: #CCC;
   --link-w-hover: #ffffffA4;
   --desc-color: #383838;
+  --avaliable-color: #6247AA;
+  --n-avaliable-color: #957FEF;
 }
 
 body {
@@ -182,6 +184,83 @@ main > h1.page-title {
   background-color: var(--link-w-hover);
   color: var(--hd-color);
   transition: .5s;
+}
+
+/* PÁGINA DO PRODUTO */
+.product-area {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.pd-image {
+  width: 55%;
+  height: 70%;
+  background-color: var(--hd-color);
+}
+
+.pd-info {
+  padding: 20px;
+  width: 50%;
+}
+
+.pd-name {
+  font-size: 2.5em;
+}
+
+.pd-description {
+  font-size: 1.3em;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.pd-stk-badge {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.pd-avaliable {
+  color: var(--avaliable-color);
+}
+
+.pd-not-avaliable {
+  color: var(--n-avaliable-color);
+}
+
+.pd-value {
+  font-size: 3em;
+  color: var(--hd-color);
+  margin-bottom: 20px;
+}
+
+.pd-buy > button {
+  width: 100%;
+  height: 40px;
+  border: solid 2px var(--hd-color);
+  background-color: var(--hd-color);
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: .5s;
+} 
+
+.pd-buy > button:hover {
+  cursor: pointer;
+  background-color: var(--bg-color);
+  color: var(--hd-color);
+  transition: .5s;
+} 
+
+.pd-buy > button:disabled {
+  cursor: not-allowed;
+  background-color: #cccccca2;
+  border: solid 2px var(--desc-color);
+  background-color: #979797d2;
+  color: var(--desc-color);
 }
 
 /* PÁGINA 404 */

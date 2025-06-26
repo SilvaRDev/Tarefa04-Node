@@ -1,3 +1,18 @@
-<h1 class="pd-name">{{product.name}}</h1>
-<p class="pd-description">{{product.description}}</p>
-<h2 class="pd-value">{{product.value}}</h2>
+<section class="product-area">
+  <div class="pd-image"></div>
+  <div class="pd-info">
+    <h1 class="pd-name">{{product.name}}</h1>
+    <p class="pd-description">{{product.description}}</p>
+    {{#if product.isStock}}
+      <p class="pd-stk-badge pd-avaliable"><strong>Em estoque</strong></p>
+    {{else}}
+      <p class="pd-stk-badge pd-not-avaliable"><strong>Produto indisponível</strong></p>
+    {{/if}} 
+      <h2 class="pd-value">R${{product.value}}</h2>
+    {{#if product.isStock}}
+      <a href="/" class="pd-buy"><button>Comprar</button></a>
+    {{else}}
+      <a href="/" class="pd-buy"><button disabled>Comprar</button></a>
+    {{/if}}
+  </div>
+</section>
