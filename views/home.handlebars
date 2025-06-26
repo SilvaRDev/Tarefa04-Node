@@ -1,1 +1,21 @@
-<h1 class="page-title">Home</h1>
+<h1 class="page-title">Nossos Produtos</h1>
+<section id="products">
+  {{#each products}}
+    <div class="card-product">
+      <div class="product-image"></div>
+      <div class="card-info">
+        <h1 class="product-title">{{this.name}}</h1>
+        <p class="product-description">{{this.description}}</p>
+        <h2 class="product-value">R${{this.value}}</h2>
+      </div>
+        <div class="product-buttons">
+          {{!-- <div class="card-btn"> --}}
+            <a href="/produto/{{this.id}}" class="link-btn details-btn"><button>Detalhes do produto</button></a>
+          {{!-- </div> --}}
+          {{!-- <div class="card-btn"> --}}
+            <a href="/produto/{{this.id}}" class="link-btn buy-btn"><button>Comprar</button></a>
+          {{!-- </div> --}}
+        </div>
+    </div>
+  {{/each}}
+</section>

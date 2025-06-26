@@ -25,8 +25,15 @@ const products = [
   {id: 8, name: 'Monitor', description: 'Monitor novo samsung', value: 2199}
 ]
 
-app.get('/produtos', (req, res) => {
-  res.render('products', { products })
+app.get('/produto/:id', (req, res) => {
+  const id = req.params.id
+
+  if (!isNaN(id) && id > 0 && id <= products.length) {
+    const product = products[id - 1];
+    res.render('product', { product });
+  } else {
+    res.status(404).render('404', { message: 'Produto não encontrado.' });
+  }
 })
 
 app.get('/entrar', (req, res) => {

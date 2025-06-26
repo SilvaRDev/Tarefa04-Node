@@ -184,6 +184,27 @@ main > h1.page-title {
   transition: .5s;
 }
 
+/* PÁGINA 404 */
+.error-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 65vh;
+}
+
+#error-title {
+  font-size: 5em;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+#error-text {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
